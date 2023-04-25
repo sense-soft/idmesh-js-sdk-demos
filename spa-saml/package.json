@@ -1,0 +1,18 @@
+{
+  "name": "my-auth-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "idmesh-spa-js": ">=0.9.1"
+  },
+  "devDependencies": {
+    "express": "^4.18.2"
+  }
+}
