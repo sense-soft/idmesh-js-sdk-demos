@@ -6,7 +6,7 @@ function App() {
   const { loginWithRedirect, logout, isAuthenticated, user, isLoading, getAccessTokenSilently } = useIDMesh();
   const onLogin = () => loginWithRedirect();
   const onLogout = () => logout({ logoutParams: { returnTo: window.location.origin } });
-  const userString = JSON.stringify(user, undefined, 4);
+  const userInfoString = JSON.stringify(user, undefined, 4);
   const [accessToken, setAccessToken] = useState('');
 
   useEffect(() => {
@@ -37,7 +37,7 @@ function App() {
       {
         isAuthenticated && (<>
          <h2>User Info:</h2>
-          <pre>{ userString }</pre>
+          <pre>{ userInfoString }</pre>
         </>)
       }
     </>

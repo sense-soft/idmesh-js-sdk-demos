@@ -1,9 +1,9 @@
 # IDMesh SDK Demos
 
-## 使用
+## usage
 
 ```
-cd spa-saml # 进入对应目录
-npm i # 安装依赖
-npm run dev # 运行示例，访问 localhost:3000
+cd vue/vue-smal
+npm i
+npm run dev # runs on localhost:3000
 ```
