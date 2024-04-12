@@ -61,7 +61,7 @@ const login = async () => {
 const logout = () => {
     idmeshClient.logout({
         logoutParams: {
-            returnTo: window.location.origin
+            redirect_uri: window.location.origin
         }
     });
 };

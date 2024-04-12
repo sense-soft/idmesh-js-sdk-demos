@@ -15,7 +15,7 @@ watch(() => unref(isAuthenticated), async (v: boolean) => {
 
 const onLogin = () => loginWithRedirect();
 const onLogout = () => {
-  logout({ logoutParams: { returnTo: window.location.origin } });
+  logout({ logoutParams: { redirect_uri: window.location.origin } });
 };
 </script>
 

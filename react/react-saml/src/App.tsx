@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 function App() {
   const { loginWithRedirect, logout, isAuthenticated, user, isLoading, getAccessTokenSilently } = useIDMesh();
   const onLogin = () => loginWithRedirect();
-  const onLogout = () => logout({ logoutParams: { returnTo: window.location.origin } });
+  const onLogout = () => logout({ logoutParams: { redirect_uri: window.location.origin } });
   const userInfoString = JSON.stringify(user, undefined, 4);
   const [accessToken, setAccessToken] = useState('');
 
